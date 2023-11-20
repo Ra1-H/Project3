@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css" />
+    <script src="js"></script>
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            height: 100vh;
+
+        }
+
+        #section1 {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        header {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            gap: 900px;
+        }
+
+
+        #logo {
+            margin-left: 100px;
+            margin-top: 20px;
+            font-size: 24px;
+            font-family: 'Manrope', sans-serif;
+            color: #666;
+        }
+
+        .header-nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            margin-right: 5px;
+            margin-top: 20px;
+            position: absolute;
+
+        }
+
+        .header-nav ul li div {
+            padding: 5px;
+        }
+
+        .header-nav ul a {
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 18px;
+            text-transform: capitalize;
+            font-family: 'Roboto', sans-serif;
+            color: #585858;
+        }
+
+        .section1-content {
+            display: flex;
+        }
+
+        .section1-content-img {
+            height: auto;
+            vertical-align: middle;
+        }
+
+        .section1-content-text {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: start;
+            padding: 150px;
+            gap: 20px;
+        }
+
+        .section1-content-text h1 {
+            font-weight: 700;
+            font-size: 82px;
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .read-more {
+            width: 180px;
+            height: 45px;
+            font-weight: 700;
+            display: inline-block;
+            line-height: inherit;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            border: 2px solid transparent;
+            font-family: 'Manrope', sans-serif;
+            background: #000;
+            border-color: #000;
+            color: #fff;
+            font-size: 13px;
+            padding: 7px 28px 7px 28px;
+        }
+
+        #section2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 150px 0px;
+            gap: 30px;
+
+        }
+
+        .section2-info {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .section2-info h1 {
+            font-family: 'Manrope', sans-serif;
+            font-size: 55px;
+            font-weight: 700;
+
+        }
+
+        .section2-info p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+
+        }
+
+        .hr-line {
+            width: 70px;
+            border: 1px solid #c0bfbf;
+        }
+
+        .section2-nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 20px 10px 20px;
+            list-style: none;
+        }
+
+        .section2-nav-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+
+        .section2-nav-card a {
+            text-decoration: none;
+            font-family: 'Manrope', sans-serif;
+            color: #000;
+            font-size: 25px;
+            font-weight: 700;
+
+        }
+
+        .section2-nav-card p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            text-align: center;
+            color: #585858;
+
+        }
+
+        #section3 {
+            display: flex;
+            padding: 50px 0px 50px 120px;
+        }
+
+        .section3-content {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px 100px 20px 100px;
+
+        }
+
+        .section3-info {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            align-items: start;
+
+        }
+
+        .section3-info h1 {
+            font-family: 'Manrope', sans-serif;
+            font-size: 55px;
+            font-weight: 700;
+
+        }
+
+        .section3-info p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        .section3-nav {
+            display: flex;
+            flex-direction: column;
+            padding-top: 50px;
+            gap: 50px;
+
+        }
+
+        .section3-nav-card {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            align-items: start;
+
+        }
+
+        .section3-nav-card a {
+            text-decoration: none;
+            font-family: 'Manrope', sans-serif;
+            color: #000;
+            font-size: 25px;
+            font-weight: 700;
+
+        }
+
+        .section3-nav-card p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            color: #585858;
+
+        }
+
+        .section3-image {
+            height: auto;
+            vertical-align: middle;
+
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section id="section1">
+
+            <header>
+                <div id="logo">
+                    <h1>Jera.</h1>
+                </div>
+
+                <div class="header-nav">
+                    <ul>
+                        <li>
+                            <div><a href="#">Home</a></div>
+                        </li>
+                        <li>
+                            <div><a href="#">Services</div></a>
+                        </li>
+                        <li>
+                            <div><a href="#">Pricing</a></div>
+                        </li>
+                        <li>
+                            <div><a href="#">Portfolio</a></div>
+                        </li>
+                        <li>
+                            <div><a href="#">contact</a></div>
+                        </li>
+                        <li>
+                            <div><a href="#"><svg data-icon="twitter"></svg></a></div>
+                        </li>
+                        <li>
+                            <div><a href="#"><svg data-icon="instagram"></svg></a></div>
+                        </li>
+                        <li>
+                            <div><a href="#"><svg data-icon="facebook"></svg></a></div>
+                        </li>
+                        <li>
+                            <div><a href="#" data-uk-search-icon data-uk-toggle><svg data-svg="search-icon"></svg></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+
+            <div class="section1-content">
+                <div class="section1-content-img">
+                    <img src="images/jeera1.png" alt="image1">
+                </div>
+
+                <div class="section1-content-text">
+                    <h1>Jeera agency is ready to take your project</h1>
+                    <button class="read-more">Read more</button>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="section2">
+            <div class="section2-info">
+                <h1>Our Services.</h1>
+                <div class="hr-line"></div>
+                <p>Simply dummy text of the printing and typesetting industry.</p>
+            </div>
+
+            <div class="section2-nav">
+                <ul class="section2-nav">
+                    <li class="section2-nav-card">
+                        <img src="session7Images/desktop.png" width="40" height="40">
+                        <a href="#">Creative Designers</a>
+                        <p>Simply dummy text of the printing and typesetting industry.</p>
+                    </li>
+                    <li class="section2-nav-card">
+                        <img src="session7Images/server.png" width="40" height="40">
+                        <a href="#">iOS Developer</a>
+                        <p>Simply dummy text of the printing and type setting industry.</p>
+                    </li>
+                    <li class="section2-nav-card">
+                        <img src="session7Images/maintainance.png" width="40" height="40">
+                        <a href="#">Maintainance</a>
+                        <p>Simply dummy text of the printing and typesetting industry.</p>
+                    </li>
+                    <li class="section2-nav-card">
+                        <img src="session7Images/calendar.png" width="40" height="40">
+                        <a href="#">Time Management</a>
+                        <p>Simply dummy text of the printing and typesetting industry.</p>
+                    </li>
+                </ul>
+
+            </div>
+
+        </section>
+
+        <section id="section3">
+            <div class="section3-content">
+                <div class="section3-info">
+                    <h1>Our Features.</h1>
+                    <div class="hr-line"></div>
+                    <p>Simply dummy text of the printing and typesetting industry.</p>
+                </div>
+
+                <div class="section3-nav">
+                    <li class="section3-nav-card">
+                        <img src="session7Images/setting.png" width="40" height="40">
+                        <a href="#">Technical Solutions</a>
+                        <p>Simply dummy text of the printing and typesetting industry.</p>
+                    </li>
+                    <li class="section3-nav-card">
+                        <img src="session7Images/minus.png" width="40" height="40">
+                        <a href="#">Unlimited Features</a>
+                        <p>Simply dummy text of the printing and typesetting industry.</p>
+                    </li>
+
+                </div>
+
+            </div>
+
+            <div class="section3-image">
+                <img src="session7Images/jeera2.png" alt="image2">
+            </div>
+
+        </section>
+    </main>
+
+</body>
+
+</html>
