@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeera</title>
+</head>
+
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            font-family: 'Manrope', sans-serif;
+
+        }
+    </style>
+
+    <header>
+        <style>
+            header {
+                display: flex;
+                justify-content: space-between;
+                /* gap:900px; */
+                padding: 20px 30px;
+                /* border: 1px solid red; */
+
+
+            }
+
+            .brand-logo {
+                font-family: 'Manrope', sans-serif;
+                color: #666;
+
+            }
+
+            nav {
+                display: flex;
+                gap: 10px;
+
+
+            }
+
+            nav a {
+                text-decoration: none;
+                font-family: 'Manrope', sans-serif;
+                color: #666;
+            }
+        </style>
+
+        <div class="brand-logo">
+            Jera.
+        </div>
+
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Pricing</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+            <a href="#">Twitter</a>
+            <a href="#">Insta</a>
+            <a href="#">Faacebook</a>
+            <a href="#">Search</a>
+        </nav>
+
+    </header>
+
+
+
+    <section id="home_content">
+
+        <style>
+            #home_content {
+                display: flex;
+                align-items: center;
+                /* border: 1px solid red; */
+                width: 100vw;
+
+
+            }
+
+            .home_img {
+                /* flex: 1; */
+                width: 50%;
+                height: auto;
+                vertical-align: middle;
+                /* box-sizing: border-box; */
+                overflow: hidden;
+
+
+            }
+
+            .home_img img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .home_textbox {
+                padding: 150px;
+                display: flex;
+                width: 50%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                gap: 20px;
+                /* border: 1px solid red; */
+                /* box-sizing: border-box;*/
+                /* flex: 1; */
+
+            }
+
+            .home_textbox h1 {
+                font-weight: 700;
+                font-size: 82px;
+
+            }
+
+            .home_textbox button {
+                width: 180px;
+                height: 45px;
+                font-weight: 700;
+                display: inline-block;
+                line-height: inherit;
+                letter-spacing: 4px;
+                text-transform: uppercase;
+                border: 2px solid transparent;
+                background: #000;
+                border-color: #000;
+                color: #fff;
+                font-size: 13px;
+                padding: 7px 28px 7px 28px;
+            }
+        </style>
+
+        <div class="home_img">
+            <img src="images2/jeera1.png" alt="picture1">
+        </div>
+
+        <div class="home_textbox">
+            <!-- <pre></pre> this tag interprets each space as an actual space -->
+            <h1>Jeera agency is ready to take your project.</h1>
+            <button>Read More</button>
+
+        </div>
+
+    </section>
+
+
+    <section id="services">
+        <style>
+            #services {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                padding: 150px 0px;
+                gap: 30px;
+
+            }
+
+            .services_info {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            .services_info h1 {
+                font-size: 55px;
+                font-weight: 700;
+
+            }
+
+            .services_info p {
+                font-size: 16px;
+                font-weight: 400;
+
+            }
+
+            .hr-line {
+                width: 70px;
+                border: 1px solid #c0bfbf;
+            }
+
+            .services_nav {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 20px 10px 20px;
+                list-style: none;
+            }
+
+            .services_nav_card {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                gap: 20px;
+                flex-wrap: wrap;
+                padding: 10px;
+            }
+
+            .services_nav_card a {
+                text-decoration: none;
+                color: #000;
+                font-size: 25px;
+                font-weight: 700;
+
+            }
+
+            .services_nav_card p {
+                font-family: 'Roboto', sans-serif;
+                font-size: 18px;
+                font-weight: 400;
+                text-align: center;
+                color: #585858;
+
+            }
+        </style>
+        <div class="services_info">
+            <h1>Our Services.</h1>
+            <div class="hr-line"></div>
+            <p> Simply dummy text of the printing and typesetting industry. </p>
+        </div>
+
+        <div class="services_nav">
+            <ul class="services_nav">
+                <li class="services_nav_card">
+                    <img src="images2/desktop.png" width="40" height="40">
+                    <a href="#">Creative Designers</a>
+                    <p>Simply dummy text of the printing and typesetting industry.</p>
+                </li>
+                <li class="services_nav_card">
+                    <img src="images2/server.png" width="40" height="40">
+                    <a href="#">iOS Developer</a>
+                    <p>Simply dummy text of the printing and type setting industry.</p>
+                </li>
+                <li class="services_nav_card">
+                    <img src="images2/maintainance.png" width="40" height="40">
+                    <a href="#">Maintainance</a>
+                    <p>Simply dummy text of the printing and typesetting industry.</p>
+                </li>
+                <li class="services_nav_card">
+                    <img src="images2/calender.png" width="40" height="40">
+                    <a href="#">Time Management</a>
+                    <p>Simply dummy text of the printing and typesetting industry.</p>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+    <section id="features">
+        <style>
+            #features {
+                display: flex;
+                padding: 50px 0px 50px 90px;
+            }
+
+            .features_content {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: flex-start;
+                padding: 20px 150px 20px 50px;
+
+            }
+
+            .features_info {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+                align-items: start;
+
+            }
+
+            .features_info h1 {
+                font-family: 'Manrope', sans-serif;
+                font-size: 55px;
+                font-weight: 700;
+
+            }
+
+            .features_info p {
+                font-family: 'Roboto', sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+            }
+
+            .features_nav {
+                display: flex;
+                flex-direction: column;
+                padding-top: 50px;
+                gap: 50px;
+
+            }
+
+            .features_nav_card {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+                align-items: start;
+
+            }
+
+            .features_nav_card a {
+                text-decoration: none;
+                font-family: 'Manrope', sans-serif;
+                color: #000;
+                font-size: 25px;
+                font-weight: 700;
+
+            }
+
+            .features_nav_card p {
+                font-family: 'Roboto', sans-serif;
+                font-size: 18px;
+                font-weight: 400;
+                color: #585858;
+
+            }
+
+            .features_image {
+                height: auto;
+                vertical-align: middle;
+
+            }
+        </style>
+        <div class="features_content">
+            <div class="features_info">
+                <h1>Our Features.</h1>
+                <div class="hr-line"></div>
+                <p>Simply dummy text of the printing and typesetting industry.</p>
+            </div>
+
+            <div class="features_nav">
+                <li class="features_nav_card">
+                    <img src="images2/settings.png" width="40" height="40">
+                    <a href="#">Technical Solutions</a>
+                    <p>Simply dummy text of the printing and typesetting industry.</p>
+                </li>
+                <li class="features_nav_card">
+                    <img src="images2/minus.png" width="40" height="40">
+                    <a href="#">Unlimited Features</a>
+                    <p>Simply dummy text of the printing and typesetting industry.</p>
+                </li>
+
+            </div>
+
+        </div>
+
+        <div class="features_image">
+            <img src="images2/jeera2.png" alt="image2">
+        </div>
+    </section>
+</body>
+
+</html>
